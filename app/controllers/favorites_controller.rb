@@ -54,7 +54,7 @@ class FavoritesController < ProtectedController
     end
 
     def favorite_params
-      params.require(:favorite).permit(:tag, :name)
+      params.require(:favorite).permit(:tag, :name, :dribble)
     end
 
     private :set_favorite, :favorite_params, :current_user
